@@ -1,0 +1,10 @@
+[
+  {
+    "spritesheet": "img/sprites/kenney_rpg_urban_city/kenney_rpg_urban_city.json",
+    "tileset": "img/sprites/kenney_rpg_urban_city/kenney_rpg_urban_city.tsx"
+  },
+  {
+    "spritesheet": "img/sprites/kenney_rpg_characters/kenney_rpg_characters.json",
+    "tileset": "img/sprites/kenney_rpg_characters/kenney_rpg_characters.tsx"
+  }
+]

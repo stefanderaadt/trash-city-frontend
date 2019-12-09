@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popups tests Popups rendering info Popup correctly 1`] = `
+<div
+  class="game-popup"
+>
+  <div
+    class="game-popup-container"
+  >
+    <div
+      class="info-popup"
+    >
+      <h1>
+        LEVEL 1
+      </h1>
+      <p>
+        Level doel
+      </p>
+      <div
+        class="popup-button-container"
+      >
+        <div
+          class="button popup-button-start"
+          role="button"
+          tabindex="0"
+        >
+          Starten
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popups tests Popups rendering no popups when \`Popups.None\` is set 1`] = `null`;
+
+exports[`Popups tests Popups rendering pause Popup correctly 1`] = `
+<div
+  class="game-popup"
+>
+  <div
+    class="game-popup-container"
+  >
+    <div
+      class="pause-popup"
+    >
+      <h1>
+        Pauze
+      </h1>
+      <div
+        class="pause-popup-buttons"
+      >
+        <div
+          class="popup-button-container"
+        >
+          <div
+            class="button popup-button-resume"
+            role="button"
+            tabindex="0"
+          >
+            Verder spelen
+          </div>
+        </div>
+        <div
+          class="popup-button-container"
+        >
+          <div
+            class="button popup-button-mainmenu"
+            role="button"
+            tabindex="0"
+          >
+            Hoofdmenu
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popups tests Popups rendering score Popup correctly 1`] = `
+<div
+  class="game-popup score-popup"
+>
+  <div
+    class="game-popup-container"
+  >
+    <div
+      class="score-popup-content"
+    >
+      <h1>
+        Gewonnen!
+      </h1>
+      <hr />
+      <div
+        class="score-popup-info"
+      >
+        <p>
+          Tijd: 05:00
+        </p>
+      </div>
+      <hr />
+      <div
+        class="score-popup-scores"
+      >
+        <div
+          class="score-popup-highscores"
+        >
+          <h2>
+            Beste tijden
+          </h2>
+          <p>
+            1: Stefan - 03:02
+          </p>
+          <p>
+            2: Naam - 00:12
+          </p>
+        </div>
+        <div
+          class="score-popup-save"
+        >
+          <p>
+            Je hebt een top 5 tijd!
+          </p>
+          <input
+            class="popup-score-name-input"
+            placeholder="Naam"
+            type="text"
+            value="nameeee"
+          />
+          <div
+            class="button popup-button-save-highscore"
+            role="button"
+            tabindex="0"
+          >
+            Score opslaan
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div
+        class="popup-button-container"
+      >
+        <div
+          class="button popup-button-mainmenu"
+          role="button"
+          tabindex="0"
+        >
+          Hoofdmenu
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?4zckoj');
+  src:  url('fonts/icomoon.eot?4zckoj#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?4zckoj') format('truetype'),
+    url('fonts/icomoon.woff?4zckoj') format('woff'),
+    url('fonts/icomoon.svg?4zckoj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-astonished-face:before {
+  content: "\e901";
+}
+.icon-laughing-face:before {
+  content: "\e902";
+}
+.icon-sad-face:before {
+  content: "\e903";
+}
+.icon-smiling-face:before {
+  content: "\e904";
+}
+.icon-neutral-face:before {
+  content: "\e905";
+}
+.icon-space_bar:before {
+  content: "\e906";
+}
+.icon-location_city:before {
+  content: "\e900";
+}
+.icon-hour-glass:before {
+  content: "\e979";
+}
+.icon-pause:before {
+  content: "\ea16";
+}
+.icon-arrow-up:before {
+  content: "\ea32";
+}
+.icon-arrow-right:before {
+  content: "\ea34";
+}
+.icon-arrow-down:before {
+  content: "\ea36";
+}
+.icon-arrow-left:before {
+  content: "\ea38";
+}

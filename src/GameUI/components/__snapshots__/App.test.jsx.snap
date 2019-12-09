@@ -1,0 +1,347 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App tests App rendering controls menu correctly 1`] = `
+<div
+  class="app"
+>
+  <div
+    class="game"
+    id="game"
+  />
+  <div
+    class="game-screen"
+  >
+    <div
+      class="game-screen-content controls-menu"
+    >
+      <div
+        class="game-screen-item game-screen-title"
+      >
+        Besturing
+      </div>
+      <div
+        class="game-screen-item"
+      >
+        Toetsen
+      </div>
+      <div
+        class="game-screen-item"
+      >
+        <div
+          class="button full-width controls-menu-back-button"
+          role="button"
+          tabindex="0"
+        >
+          Terug
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`App tests App rendering game ui correctly 1`] = `
+<div
+  class="app"
+>
+  <div
+    class="game"
+    id="game"
+  />
+  <div
+    class="game"
+  >
+    <div
+      class="game-overlay-ui"
+    >
+      <div
+        class="top-bar"
+      >
+        <div
+          class="button undefined"
+          role="button"
+          tabindex="0"
+        >
+          <i
+            class="icon-pause"
+          />
+        </div>
+      </div>
+      <div
+        class="bottom-bar"
+      >
+        <div
+          class="bottom-bar-progress"
+        >
+          <div
+            class="bottom-bar-progress-bar"
+          >
+            <div
+              class="progress-bar"
+            >
+              <div
+                class="progress-bar-display"
+                style="width:34%"
+              />
+              <div
+                class="progress-bar-text"
+              >
+                34%
+              </div>
+            </div>
+          </div>
+          <div
+            class="bottom-bar-progress-icon"
+          >
+            <i
+              class="icon-sad-face"
+            />
+          </div>
+        </div>
+        <div
+          class="bottom-bar-time"
+        >
+          Tijd: 05:00
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`App tests App rendering levels ui correctly 1`] = `
+<div
+  class="app"
+>
+  <div
+    class="game"
+    id="game"
+  />
+  <div
+    class="game-screen"
+  >
+    <div
+      class="game-screen-content level-menu"
+    >
+      <div
+        class="game-screen-item game-screen-title"
+      >
+        Levels
+      </div>
+      <div
+        class="game-screen-level-picker"
+      >
+        <div
+          class="game-screen-level-item"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="game-screen-level-item-content"
+          >
+            <div
+              class="game-screen-level-thumbnail"
+            >
+              <img
+                alt="LEVEL 1"
+                src="img/placeholder-img.jpg"
+              />
+            </div>
+            <div
+              class="game-screen-level-name"
+            >
+              LEVEL 1
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="game-screen-item"
+      >
+        <div
+          class="button full-width level-picker-mainmenu-button"
+          role="button"
+          tabindex="0"
+        >
+          Terug
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`App tests App rendering loading screen correctly 1`] = `
+<div
+  class="app"
+>
+  <div
+    class="game"
+    id="game"
+  />
+  <div
+    class="game-screen"
+  >
+    <div
+      class="game-screen-content"
+    >
+      <div
+        class="game-screen-item game-screen-title"
+      >
+        Textures laden
+      </div>
+      <div
+        class="game-screen-item"
+      >
+        <div
+          class="progress-bar"
+        >
+          <div
+            class="progress-bar-display"
+            style="width:80%"
+          />
+          <div
+            class="progress-bar-text"
+          >
+            80
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`App tests App rendering main menu correctly 1`] = `
+<div
+  class="app"
+>
+  <div
+    class="game"
+    id="game"
+  />
+  <div
+    class="game-screen"
+  >
+    <div
+      class="game-screen-content"
+    >
+      <div
+        class="game-screen-item game-screen-title"
+      >
+        Hoofdmenu
+      </div>
+      <div
+        class="game-screen-item"
+      >
+        <div
+          class="button full-width main-menu-levels-button"
+          role="button"
+          tabindex="0"
+        >
+          Levels
+        </div>
+      </div>
+      <div
+        class="game-screen-item"
+      >
+        <div
+          class="button full-width main-menu-controls-button"
+          role="button"
+          tabindex="0"
+        >
+          Besturing
+        </div>
+      </div>
+      <div
+        class="game-screen-item"
+      >
+        <div
+          class="button full-width main-menu-settings-button"
+          role="button"
+          tabindex="0"
+        >
+          Opties
+        </div>
+      </div>
+      <div
+        class="game-screen-item"
+      >
+        <div
+          class="button full-width main-menu-close-button"
+          role="button"
+          tabindex="0"
+        >
+          Afsluiten
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`App tests App rendering settings menu correctly 1`] = `
+<div
+  class="app"
+>
+  <div
+    class="game"
+    id="game"
+  />
+  <div
+    class="game-screen"
+  >
+    <div
+      class="game-screen-content settings-menu"
+    >
+      <div
+        class="game-screen-item game-screen-title"
+      >
+        Opties
+      </div>
+      <div
+        class="game-screen-item"
+      >
+        <span>
+          Volume: 50
+        </span>
+        <div
+          aria-orientation="horizontal"
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow="50"
+          class="rangeslider rangeslider-horizontal settings-volume-rangeslider"
+        >
+          <div
+            class="rangeslider__fill"
+            style="width:0px"
+          />
+          <div
+            class="rangeslider__handle"
+            style="left:0px"
+            tabindex="0"
+          >
+            <div
+              class="rangeslider__handle-label"
+            />
+          </div>
+          <ul
+            class="rangeslider__labels"
+          />
+        </div>
+      </div>
+      <div
+        class="game-screen-item"
+      >
+        <div
+          class="button full-width settings-menu-back-button"
+          role="button"
+          tabindex="0"
+        >
+          Terug
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

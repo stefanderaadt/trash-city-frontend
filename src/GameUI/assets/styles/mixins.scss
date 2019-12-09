@@ -1,0 +1,14 @@
+@mixin container-shadow {
+  -moz-box-shadow: 0 0 5px $grey-darker;
+  -webkit-box-shadow: 0 0 5px $grey-darker;
+  box-shadow: 0 0 5px $grey-darker;
+}
+
+@mixin no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

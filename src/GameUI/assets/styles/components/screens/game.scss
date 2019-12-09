@@ -1,0 +1,163 @@
+.game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  .game-overlay-ui {
+    position: relative;
+    height: 100%;
+
+    .top-bar {
+      top: 0;
+      left: 0;
+      position: absolute;
+      font-size: 2rem;
+      line-height: 1.75rem;
+      margin: 0.5rem;
+    }
+
+    .bottom-bar {
+      bottom: 0;
+      position: absolute;
+      background: rgba($grey, 0.9);
+      width: 100%;
+      height: 4rem;
+      font-size: 2rem;
+      line-height: 3rem;
+      @include container-shadow;
+
+      .bottom-bar-progress {
+        width: 50%;
+        position: relative;
+        display: inline-block;
+        text-align: left;
+        height: 4rem;
+
+        .bottom-bar-progress-bar {
+          width: 50%;
+          display: inline-block;
+          padding: 0 0.5rem;
+          vertical-align: middle;
+
+          .progress-bar {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            height: 2rem;
+            line-height: 1.5rem;
+          }
+        }
+
+        .bottom-bar-progress-icon {
+          vertical-align: middle;
+          width: 50%;
+          display: inline-block;
+          padding: 0 0.5rem;
+        }
+      }
+
+      .bottom-bar-time {
+        width: 50%;
+        display: inline-block;
+        text-align: right;
+        padding: 0 0.5rem;
+      }
+    }
+  }
+
+  .game-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    .game-popup-container {
+      position: absolute;
+      top: calc(50% - 12rem);
+      left: calc(50% - 18rem);
+      width: 36rem;
+      height: 24rem;
+      background: $grey;
+      @include container-shadow;
+
+      .popup-button-container {
+        margin: 1.5rem;
+
+        .button {
+          width: 20rem;
+        }
+      }
+
+      .pause-popup .pause-popup-buttons .popup-button-container:first-child {
+        margin-top: 5rem;
+      }
+
+      .info-popup {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        .popup-button-container {
+          margin: 0;
+          position: absolute;
+          bottom: 3rem;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+
+  .score-popup {
+    .game-popup-container {
+      top: calc(50% - 16rem);
+      left: calc(50% - 22rem);
+      width: 44rem;
+      height: 32rem;
+
+      .score-popup-content {
+        margin: 1rem;
+
+        .score-popup-info {
+          p {
+            width: 50%;
+            display: inline-block;
+          }
+        }
+
+        .score-popup-scores {
+          .score-popup-highscores {
+            min-width: 50%;
+            width: auto;
+            display: inline-block;
+            vertical-align: top;
+          }
+
+          .score-popup-save {
+            width: 50%;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            vertical-align: top;
+
+            .popup-score-name-input {
+              display: block;
+              width: 20rem;
+              padding: 0.5rem;
+              color: $grey-dark;
+              text-align: center;
+              margin: 0 auto;
+            }
+
+            .popup-button-save-highscore {
+              margin-top: 0.5rem;
+              width: 20rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

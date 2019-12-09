@@ -1,0 +1,30 @@
+@import '~react-rangeslider/lib/index.css';
+@import './theme.scss';
+@import './mixins.scss';
+
+html,
+body,
+#root,
+.app,
+.game {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.game {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: $font-family;
+  color: $white;
+}
+
+@import './components/index.scss';

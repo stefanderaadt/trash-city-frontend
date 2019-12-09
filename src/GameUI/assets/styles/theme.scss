@@ -1,0 +1,26 @@
+// Google fonts
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap);
+
+$font-family: 'Source Code Pro', monospace;
+
+// colors
+$grey-dark: hsl(0, 0%, 5%);
+$grey-darker: hsl(0, 0%, 10%);
+$grey: hsl(0, 0%, 14%);
+$grey-light: hsl(0, 0%, 21%);
+$grey-lighter: hsl(0, 0%, 29%);
+
+$white: #fff;
+$white-ter: #f5f5f5;
+$black: #000;
+
+$dark-aqua: #357e7e;
+$aqua: #46a6a6;
+$light-aqua: #5dbbbb;
+$dark-green: #01261c;
+$green: #025928;
+$light-green: #238c51;
+$red: #d91a1a;
+
+$primary: $aqua;
+$font-color: $white;

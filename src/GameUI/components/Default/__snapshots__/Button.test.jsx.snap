@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button tests Button component rendering as expected 1`] = `
+<div
+  className="button test-button"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="button"
+  tabIndex={0}
+/>
+`;
+
+exports[`Button tests Button component rendering as expected with busy set 1`] = `
+<div
+  className="button undefined"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="button"
+  tabIndex={0}
+>
+  <i
+    className="icon-busy icon-hour-glass"
+  />
+</div>
+`;
+
+exports[`Button tests Button component rendering as expected with disabled set 1`] = `
+<div
+  className="button disabled undefined"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="button"
+  tabIndex={0}
+/>
+`;
+
+exports[`Button tests Button component rendering as expected with fullwidth set 1`] = `
+<div
+  className="button full-width undefined"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="button"
+  tabIndex={0}
+/>
+`;

@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Score popup tests Score rendering correctly with fetchedHighScores = false 1`] = `
+<div
+  class="game-popup score-popup"
+>
+  <div
+    class="game-popup-container"
+  >
+    <div
+      class="score-popup-content"
+    >
+      <h1>
+        Gewonnen!
+      </h1>
+      <hr />
+      <div
+        class="score-popup-info"
+      >
+        <p>
+          Tijd: 05:00
+        </p>
+      </div>
+      <hr />
+      <hr />
+      <div
+        class="popup-button-container"
+      >
+        <div
+          class="button popup-button-mainmenu"
+          role="button"
+          tabindex="0"
+        >
+          Hoofdmenu
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Score popup tests Score rendering correctly with fetchingHighScores = true 1`] = `
+<div
+  class="game-popup score-popup"
+>
+  <div
+    class="game-popup-container"
+  >
+    <div
+      class="score-popup-content"
+    >
+      <h1>
+        Gewonnen!
+      </h1>
+      <hr />
+      <div
+        class="score-popup-info"
+      >
+        <p>
+          Tijd: 05:00
+        </p>
+      </div>
+      <hr />
+      <i
+        class="icon-busy icon-hour-glass"
+      />
+      <hr />
+      <div
+        class="popup-button-container"
+      >
+        <div
+          class="button popup-button-mainmenu"
+          role="button"
+          tabindex="0"
+        >
+          Hoofdmenu
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

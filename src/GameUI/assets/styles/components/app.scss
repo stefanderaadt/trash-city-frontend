@@ -1,0 +1,43 @@
+.app {
+  position: relative;
+
+  .game-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background: $grey;
+
+    .game-screen-content {
+      max-height: 100%;
+      max-width: 100%;
+      width: 30rem;
+      height: 30rem;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      margin: auto;
+
+      .game-screen-item {
+        width: 100%;
+        padding: 1.5rem;
+        padding-bottom: 0;
+
+        &:last-child {
+          padding-bottom: 1.5rem;
+        }
+      }
+
+      .game-screen-title {
+        font-size: 2.5rem;
+        text-align: center;
+      }
+    }
+  }
+}

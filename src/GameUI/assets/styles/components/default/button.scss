@@ -1,0 +1,32 @@
+.button {
+  background: $primary;
+  color: $white;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  @include container-shadow;
+
+  &:hover {
+    background: $light-aqua;
+    color: $grey-darker;
+  }
+
+  &.is-large {
+    padding: 1rem;
+  }
+
+  &.is-small {
+    padding: 0.25rem;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.disabled {
+    background: $dark-aqua;
+    cursor: not-allowed;
+  }
+}

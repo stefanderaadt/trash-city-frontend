@@ -1,0 +1,40 @@
+.app {
+  .game-screen {
+    .level-menu {
+      height: 20rem;
+      width: 50rem;
+
+      .game-screen-level-picker {
+        margin-top: 1rem;
+        background: $grey-darker;
+        padding: 0 0.25rem;
+
+        .game-screen-level-item {
+          display: inline-block;
+          padding: 0.5rem 0.25rem;
+          width: 20%;
+          text-align: center;
+
+          .game-screen-level-item-content {
+            cursor: pointer;
+            padding: 0.5rem;
+            background: $grey;
+
+            &:hover {
+              background: $grey-lighter;
+            }
+
+            .game-screen-level-thumbnail {
+              padding-bottom: 0.25rem;
+            }
+          }
+        }
+      }
+
+      .game-screen-item {
+        width: 30rem;
+        margin: 0 auto;
+      }
+    }
+  }
+}

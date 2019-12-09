@@ -1,0 +1,18 @@
+.controls-menu {
+  text-align: center;
+  .controls-menu-keys-top,
+  .controls-menu-keys {
+    .icon {
+      margin: 0 0.125rem;
+      font-size: 2rem;
+    }
+
+    .icon-space_bar {
+      font-size: 5rem;
+    }
+  }
+
+  .controls-menu-keys {
+    padding: 0.125rem !important;
+  }
+}

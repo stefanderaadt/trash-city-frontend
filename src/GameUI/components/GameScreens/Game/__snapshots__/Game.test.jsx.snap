@@ -1,0 +1,306 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game tests Game rendering correctly with high score 1`] = `
+<div
+  class="game"
+>
+  <div
+    class="game-overlay-ui"
+  >
+    <div
+      class="top-bar"
+    >
+      <div
+        class="button undefined"
+        role="button"
+        tabindex="0"
+      >
+        <i
+          class="icon-pause"
+        />
+      </div>
+    </div>
+    <div
+      class="bottom-bar"
+    >
+      <div
+        class="bottom-bar-progress"
+      >
+        <div
+          class="bottom-bar-progress-bar"
+        >
+          <div
+            class="progress-bar"
+          >
+            <div
+              class="progress-bar-display"
+              style="width:70%"
+            />
+            <div
+              class="progress-bar-text"
+            >
+              70%
+            </div>
+          </div>
+        </div>
+        <div
+          class="bottom-bar-progress-icon"
+        >
+          <i
+            class="icon-smiling-face"
+          />
+        </div>
+      </div>
+      <div
+        class="bottom-bar-time"
+      >
+        Tijd: 05:00
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Game tests Game rendering correctly with highest score 1`] = `
+<div
+  class="game"
+>
+  <div
+    class="game-overlay-ui"
+  >
+    <div
+      class="top-bar"
+    >
+      <div
+        class="button undefined"
+        role="button"
+        tabindex="0"
+      >
+        <i
+          class="icon-pause"
+        />
+      </div>
+    </div>
+    <div
+      class="bottom-bar"
+    >
+      <div
+        class="bottom-bar-progress"
+      >
+        <div
+          class="bottom-bar-progress-bar"
+        >
+          <div
+            class="progress-bar"
+          >
+            <div
+              class="progress-bar-display"
+              style="width:100%"
+            />
+            <div
+              class="progress-bar-text"
+            >
+              100%
+            </div>
+          </div>
+        </div>
+        <div
+          class="bottom-bar-progress-icon"
+        >
+          <i
+            class="icon-laughing-face"
+          />
+        </div>
+      </div>
+      <div
+        class="bottom-bar-time"
+      >
+        Tijd: 05:00
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Game tests Game rendering correctly with low score 1`] = `
+<div
+  class="game"
+>
+  <div
+    class="game-overlay-ui"
+  >
+    <div
+      class="top-bar"
+    >
+      <div
+        class="button undefined"
+        role="button"
+        tabindex="0"
+      >
+        <i
+          class="icon-pause"
+        />
+      </div>
+    </div>
+    <div
+      class="bottom-bar"
+    >
+      <div
+        class="bottom-bar-progress"
+      >
+        <div
+          class="bottom-bar-progress-bar"
+        >
+          <div
+            class="progress-bar"
+          >
+            <div
+              class="progress-bar-display"
+              style="width:30%"
+            />
+            <div
+              class="progress-bar-text"
+            >
+              30%
+            </div>
+          </div>
+        </div>
+        <div
+          class="bottom-bar-progress-icon"
+        >
+          <i
+            class="icon-sad-face"
+          />
+        </div>
+      </div>
+      <div
+        class="bottom-bar-time"
+      >
+        Tijd: 05:00
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Game tests Game rendering correctly with lowest score 1`] = `
+<div
+  class="game"
+>
+  <div
+    class="game-overlay-ui"
+  >
+    <div
+      class="top-bar"
+    >
+      <div
+        class="button undefined"
+        role="button"
+        tabindex="0"
+      >
+        <i
+          class="icon-pause"
+        />
+      </div>
+    </div>
+    <div
+      class="bottom-bar"
+    >
+      <div
+        class="bottom-bar-progress"
+      >
+        <div
+          class="bottom-bar-progress-bar"
+        >
+          <div
+            class="progress-bar"
+          >
+            <div
+              class="progress-bar-display"
+              style="width:0%"
+            />
+            <div
+              class="progress-bar-text"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div
+          class="bottom-bar-progress-icon"
+        >
+          <i
+            class="icon-astonished-face"
+          />
+        </div>
+      </div>
+      <div
+        class="bottom-bar-time"
+      >
+        Tijd: 05:00
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Game tests Game rendering correctly with normal score 1`] = `
+<div
+  class="game"
+>
+  <div
+    class="game-overlay-ui"
+  >
+    <div
+      class="top-bar"
+    >
+      <div
+        class="button undefined"
+        role="button"
+        tabindex="0"
+      >
+        <i
+          class="icon-pause"
+        />
+      </div>
+    </div>
+    <div
+      class="bottom-bar"
+    >
+      <div
+        class="bottom-bar-progress"
+      >
+        <div
+          class="bottom-bar-progress-bar"
+        >
+          <div
+            class="progress-bar"
+          >
+            <div
+              class="progress-bar-display"
+              style="width:50%"
+            />
+            <div
+              class="progress-bar-text"
+            >
+              50%
+            </div>
+          </div>
+        </div>
+        <div
+          class="bottom-bar-progress-icon"
+        >
+          <i
+            class="icon-neutral-face"
+          />
+        </div>
+      </div>
+      <div
+        class="bottom-bar-time"
+      >
+        Tijd: 05:00
+      </div>
+    </div>
+  </div>
+</div>
+`;

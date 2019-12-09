@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar tests ProgressBar component rendering as expected 1`] = `
+<div
+  className="progress-bar"
+>
+  <div
+    className="progress-bar-display"
+    style={
+      Object {
+        "width": "78%",
+      }
+    }
+  />
+  <div
+    className="progress-bar-text"
+  >
+    78
+  </div>
+</div>
+`;
