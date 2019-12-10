@@ -7,10 +7,10 @@
   "author": "Your Name <your@email.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --config=config/webpack.dev.js",
     "start": "node server.js",
     "heroku-postbuild": "npm run build",
     "build": "webpack --config=config/webpack.prod.js",
+    "dev": "webpack-dev-server --config=config/webpack.dev.js",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
