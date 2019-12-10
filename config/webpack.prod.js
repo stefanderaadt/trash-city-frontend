@@ -15,7 +15,7 @@ module.exports = env =>
     mode: 'production',
     devtool: 'source-map',
     output: {
-      publicPath: '/trash-city'
+      publicPath: '/'
     },
     module: {
       rules: [
