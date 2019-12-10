@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node server.js",
     "heroku-postbuild": "npm run build",
-    "build": "webpack --config=config/webpack.prod.js",
+    "build": "webpack --env.API_URL=https://trash-city-api.herokuapp.com --config=config/webpack.prod.js",
     "dev": "webpack-dev-server --config=config/webpack.dev.js",
     "test": "jest",
     "test:coverage": "jest --coverage"
