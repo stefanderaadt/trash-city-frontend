@@ -1,0 +1,34 @@
+[
+  {
+    "key": "bird",
+    "path": "sound/bird.mp3"
+  },
+  {
+    "key": "trash_pickup1",
+    "path": "sound/trash_pickup1.mp3"
+  },
+  {
+    "key": "trash_pickup2",
+    "path": "sound/trash_pickup2.mp3"
+  },
+  {
+    "key": "trash_pickup3",
+    "path": "sound/trash_pickup3.mp3"
+  },
+  {
+    "key": "trash_pickup4",
+    "path": "sound/trash_pickup4.mp3"
+  },
+  {
+    "key": "trash_pickup5",
+    "path": "sound/trash_pickup5.mp3"
+  },
+  {
+    "key": "trash_pickup6",
+    "path": "sound/trash_pickup6.mp3"
+  },
+  {
+    "key": "water",
+    "path": "sound/water.wav"
+  }
+]

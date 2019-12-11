@@ -7,6 +7,9 @@ import game from '../Game';
 import BoxCollider from '../BoxCollider';
 import Trash from '../gameObjects/objects/Trash';
 import { GameEventIds } from '../../enums';
+import random from '../../utils/random';
+
+const pickupSoundsCount = 6;
 
 class TrashLayer implements ILayer {
   public container: PIXI.Container;
@@ -118,6 +121,11 @@ class TrashLayer implements ILayer {
         const trashItem = this.trash[i] as Trash;
         trashIdsInRadius.push(trashItem.id);
       }
+    }
+
+    // Play one of the random pickup sounds
+    if (trashIdsInRadius.length) {
+      game.soundManager.playSound(`trash_pickup${random(1, pickupSoundsCount)}`);
     }
 
     // Filter and destroy found trash gameObjects from array

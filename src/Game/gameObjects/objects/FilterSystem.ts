@@ -1,6 +1,4 @@
 /* eslint-disable import/no-cycle */
-import { ColorReplaceFilter } from 'pixi-filters';
-
 import IGameObject from '../IGameObject';
 import Position from '../Position';
 import BoxCollider from '../../BoxCollider';
@@ -26,6 +24,9 @@ class FilterSystem implements IGameObject {
     // Disable filter after set 'filterBreakDownDuration'
     if (game.gameLoop.frame > 0 && !(game.gameLoop.frame % this.filterBreakDownDuration)) {
       this.filterActive = false;
+
+      // Play water sound when filtersystem broke down
+      game.soundManager.playSound('water');
     }
 
     // Update water with set filter active state
@@ -52,6 +53,9 @@ class FilterSystem implements IGameObject {
   public activateFilter = (): void => {
     // Set filter active
     this.filterActive = true;
+
+    // Play water sound when fixing filtersystem
+    game.soundManager.playSound('water');
   };
 
   // Check if object is an instance of this object (FilterSystem)

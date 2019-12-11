@@ -18,7 +18,7 @@ import Button from '../../Default/Button';
 class SettingsMenu extends React.Component {
   setVolume = v => {
     const { dispatch } = this.props;
-    dispatch(setVolume(v));
+    dispatch(setVolume(v / 100));
   };
 
   setScreen = screen => {
@@ -31,14 +31,16 @@ class SettingsMenu extends React.Component {
       settings: { volume }
     } = this.props;
 
+    const volumeValue = volume * 100;
+
     return (
       <div className="game-screen-content settings-menu">
         <div className="game-screen-item game-screen-title">Opties</div>
         <div className="game-screen-item">
-          <span>{`Volume: ${volume}`}</span>
+          <span>{`Volume: ${volumeValue}`}</span>
           <Slider
             className="settings-volume-rangeslider"
-            value={volume}
+            value={volumeValue}
             orientation="horizontal"
             onChange={this.setVolume}
             tooltip={false}
