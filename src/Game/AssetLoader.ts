@@ -7,6 +7,7 @@ import store from '../store';
 import { startLoading, onLoading, loadingCompleted } from '../actions/loaderActions';
 
 import spritesheetTilesetMap from './assets/spritesheet_tileset_map.json';
+import soundMap from './assets/sound_map.json';
 
 class AssetLoader {
   private loader: PIXI.Loader;
@@ -39,6 +40,10 @@ class AssetLoader {
       }));
     });
 
+    soundMap.forEach(map => {
+      this.loader.add(map.key, map.path);
+    });
+
     // Start loading process
     this.loader.load();
   };
@@ -67,6 +72,10 @@ class AssetLoader {
 
     return this.getAssetById({ tileset, id: tile.id });
   };
+
+  // Get loaded sound by ID to play in gameobject
+  public getSoundById = ({ id }): PIXI.sound.Sound =>
+    this.loader?.resources[id].sound
 
   // Get assets by 'Texture Packer' id
   public getAssetById = ({ tileset, id }): PIXI.Texture =>

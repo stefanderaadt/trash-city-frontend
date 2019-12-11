@@ -11,6 +11,8 @@ import AssetLoader from './AssetLoader';
 import GameObjectFactory from './GameObjectFactory';
 import Level from './Level';
 import InputHandler from './InputHandler';
+import SoundManager from './SoundManager';
+
 import {
   pauseGame,
   resumeGame,
@@ -31,6 +33,7 @@ class Game {
   public gameObjectFactory: GameObjectFactory;
   public currentLevel: Level;
   public inputHandler: InputHandler;
+  public soundManager: SoundManager;
 
   public async init(): Promise<void> {
     const gameId = document.getElementById('game');
@@ -55,6 +58,8 @@ class Game {
     this.gameObjectFactory = new GameObjectFactory();
 
     this.inputHandler = new InputHandler();
+
+    this.soundManager = new SoundManager();
 
     this.gameLoop = new GameLoop(fps, this.loop);
   }
