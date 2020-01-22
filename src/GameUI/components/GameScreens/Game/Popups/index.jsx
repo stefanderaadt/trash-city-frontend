@@ -31,7 +31,13 @@ class GamePopups extends React.Component {
   };
 
   saveHighScore = () => {
-    const { dispatch } = this.props;
+    const {
+      dispatch,
+      score: { name }
+    } = this.props;
+
+    if (!name.length) return;
+
     dispatch(saveHighScore());
   };
 
