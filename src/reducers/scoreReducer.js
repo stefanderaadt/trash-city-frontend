@@ -51,7 +51,8 @@ export default (state = defaultState, action) => {
         ...state,
         highScores: action.payload,
         fetchingHighScores: false,
-        fetchedHighScores: true
+        fetchedHighScores: true,
+        savedScore: false
       };
 
     case 'FETCHING_HIGH_SCORES_ERROR':
