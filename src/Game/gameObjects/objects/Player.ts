@@ -32,13 +32,13 @@ class Player implements IGameObject {
 
   public init = (): PIXI.AnimatedSprite => {
     // Get animations and add to animations object
-    this.initAnimation('1_walk_left');
-    this.initAnimation('1_walk_right');
-    this.initAnimation('1_walk_up');
-    this.initAnimation('1_walk_down');
+    this.initAnimation('7_walk_left');
+    this.initAnimation('7_walk_right');
+    this.initAnimation('7_walk_up');
+    this.initAnimation('7_walk_down');
 
     // Create new AnimatedSprite based on animation
-    const sprite: PIXI.AnimatedSprite = new PIXI.AnimatedSprite(this.animations['1_walk_down']);
+    const sprite: PIXI.AnimatedSprite = new PIXI.AnimatedSprite(this.animations['7_walk_down']);
     sprite.x = this.boxCollider.position.x;
     sprite.y = this.boxCollider.position.y;
     sprite.pivot.x = 8; // Set center of rotation to the center of the sprite
@@ -113,12 +113,13 @@ class Player implements IGameObject {
     ) {
       game.currentLevel.trashLayer.pickupTrash(this.boxCollider);
       game.currentLevel.gameObjectLayer.repairFilter(this.boxCollider);
+      game.currentLevel.gameObjectLayer.spawnCleaner(this.boxCollider);
     }
 
     // Update animation if the direction has changed
     if (this.direction !== this.previousDirection) {
       this.sprite.textures = this.animations[
-        `1_walk_${ObjectDirection[this.direction].toLowerCase()}`
+        `7_walk_${ObjectDirection[this.direction].toLowerCase()}`
       ];
       this.sprite.play();
     }

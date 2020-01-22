@@ -4,6 +4,7 @@ const defaultState = {
   active: false,
   currentPopup: Popups.None,
   score: 50,
+  coins: 0,
   time: 0
 };
 
@@ -18,6 +19,11 @@ export default (state = defaultState, action) => {
       return {
         ...state,
         score: action.payload
+      };
+    case 'SET_COINS':
+      return {
+        ...state,
+        coins: action.payload
       };
     case 'RESUME_GAME':
       return {

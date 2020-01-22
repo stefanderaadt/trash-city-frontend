@@ -57,12 +57,19 @@ class Level {
 
     // Update score once every 60 frames (1 second)
     if (!(game.gameLoop.frame % game.gameLoop.fps)) {
-      // Get trash and filter scores
-      const trashScore = this.calculateTrashScore();
-      const filterScore = this.calculateFilterScore();
+      let score;
 
-      // Trash counts for 80% filter counts for 20%
-      const score = trashScore * 0.8 + filterScore * 0.2;
+      if (this.gameObjectLayer.filterExists()) {
+        // Get trash and filter scores
+        const trashScore = this.calculateTrashScore();
+        const filterScore = this.calculateFilterScore();
+
+        // Trash counts for 80% filter counts for 20%
+        score = trashScore * 0.8 + filterScore * 0.2;
+      } else {
+        // Just get the trash score when no filter found
+        score = this.calculateTrashScore();
+      }
 
       // Check if score has changed
       if (game.getScore() !== score) {

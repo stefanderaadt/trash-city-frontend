@@ -1,8 +1,8 @@
 {
   "id": 1,
-  "name": "LEVEL 1",
+  "name": "De stad",
   "goal": "Ruim het afval op en repareer het water filter systeem als deze kapot gaat.",
-  "thumbnail": "img/placeholder-img.jpg",
+  "thumbnail": "img/level1.png",
   "layers": 3,
   "width": 60,
   "height": 32,

@@ -8,10 +8,10 @@ import game from '../../Game';
 import random from '../../../utils/random';
 import { GameEventIds, ObjectDirection } from '../../../enums';
 
-class Civilian implements IGameObject {
+class Cleaner implements IGameObject {
   public boxCollider: BoxCollider;
 
-  private type: number;
+  private type: number = 8;
   private sprite: PIXI.AnimatedSprite;
   private animations: object = {};
 
@@ -23,9 +23,6 @@ class Civilian implements IGameObject {
   }
 
   public init = (): PIXI.AnimatedSprite => {
-    // Get random character
-    this.type = random(1, 6);
-
     // Get animations and add to animations object
     this.initAnimation(`${this.type}_walk_left`);
     this.initAnimation(`${this.type}_walk_right`);
@@ -57,6 +54,11 @@ class Civilian implements IGameObject {
   };
 
   public update = (): void => {
+    // Pickup trash randomly
+    if (Math.random() > 0.992) {
+      game.currentLevel.trashLayer.pickupTrash(this.boxCollider);
+    }
+
     // Find possible directions for AI
     const directions = game.currentLevel.eventsMap.tilesWithIdAround(
       this.boxCollider,
@@ -96,11 +98,7 @@ class Civilian implements IGameObject {
       this.boxCollider.position.y +=
         this.boxCollider.position.speed * this.boxCollider.position.ySpeed;
 
-      // Try to spawn trash
-      game.currentLevel.trashLayer.trySpawnTrash(
-        this.boxCollider.position.x,
-        this.boxCollider.position.y
-      );
+      // Try to pickup trash
     }
   };
 
@@ -126,4 +124,4 @@ class Civilian implements IGameObject {
   };
 }
 
-export default Civilian;
+export default Cleaner;

@@ -64,6 +64,22 @@ class CivilianLayer implements ILayer {
     // Add gameObject to array of existing gameObjects
     this.civilians.push(civilian);
   };
+
+  public spawnCleaner = ({ x, y }): void => {
+    // Spawn cleaner with gameObjectFactory
+    const cleaner: IGameObject = game.gameObjectFactory.create({
+      name: 'Cleaner',
+      x,
+      y
+    });
+
+    // Get sprite from gameObject and add to layer
+    const sprite = cleaner.init() as PIXI.Sprite | PIXI.AnimatedSprite;
+    if (sprite) this.container.addChild(sprite);
+
+    // Add gameObject to array of existing gameObjects
+    this.civilians.push(cleaner);
+  };
 }
 
 export default CivilianLayer;

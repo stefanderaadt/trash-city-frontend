@@ -9,6 +9,7 @@ import { GameEventIds } from '../../enums';
 import WaterTile from '../gameObjects/objects/WaterTile';
 import FilterSystem from '../gameObjects/objects/FilterSystem';
 import BoxCollider from '../BoxCollider';
+import CleanerSpawnPoint from '../gameObjects/objects/CleanerSpawnPoint';
 
 class GameObjectLayer implements ILayer {
   public container: PIXI.Container;
@@ -68,6 +69,19 @@ class GameObjectLayer implements ILayer {
         if (objectId && objectId === GameEventIds.FilterSystem) {
           const object = game.gameObjectFactory.create({
             name: 'FilterSystem',
+            x: x * this.tileSize + this.tileSize / 2,
+            y: y * this.tileSize + this.tileSize / 2
+          });
+
+          const sprite = object.init() as PIXI.Sprite | PIXI.AnimatedSprite;
+          if (sprite) this.container.addChild(sprite);
+
+          this.activeGameObjects.push(object);
+        }
+
+        if (objectId && objectId === GameEventIds.CleanerSpawnPoint) {
+          const object = game.gameObjectFactory.create({
+            name: 'CleanerSpawnPoint',
             x: x * this.tileSize + this.tileSize / 2,
             y: y * this.tileSize + this.tileSize / 2
           });
@@ -138,6 +152,16 @@ class GameObjectLayer implements ILayer {
     }
   };
 
+  public filterExists = (): boolean => {
+    for (let i = 0; i < this.activeGameObjects.length; i += 1) {
+      if (FilterSystem.isFilterSystem(this.activeGameObjects[i])) {
+        return true;
+      }
+    }
+
+    return false;
+  };
+
   public filterActive = (): boolean => {
     for (let i = 0; i < this.activeGameObjects.length; i += 1) {
       if (FilterSystem.isFilterSystem(this.activeGameObjects[i])) {
@@ -147,6 +171,18 @@ class GameObjectLayer implements ILayer {
     }
 
     return true;
+  };
+
+  public spawnCleaner = (otherBoxCollider: BoxCollider): void => {
+    for (let i = 0; i < this.activeGameObjects.length; i += 1) {
+      if (CleanerSpawnPoint.isCleanerSpawnPoint(this.activeGameObjects[i])) {
+        const cleanerSpawnPoint = this.activeGameObjects[i] as CleanerSpawnPoint;
+
+        if (cleanerSpawnPoint.boxCollider.isInRadius(otherBoxCollider, 20)) {
+          cleanerSpawnPoint.spawnCleaner();
+        }
+      }
+    }
   };
 }
 
