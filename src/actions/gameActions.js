@@ -6,6 +6,11 @@ export const setScore = score => ({
   payload: score
 });
 
+export const setCoins = coins => ({
+  type: 'SET_COINS',
+  payload: coins
+});
+
 export const setTime = time => ({
   type: 'SET_TIME',
   payload: time

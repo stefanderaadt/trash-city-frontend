@@ -5,6 +5,8 @@ import CivilianSpawnPoint from './objects/CivilianSpawnPoint';
 import Trash from './objects/Trash';
 import WaterTile from './objects/WaterTile';
 import FilterSystem from './objects/FilterSystem';
+import Cleaner from './objects/Cleaner';
+import CleanerSpawnPoint from './objects/CleanerSpawnPoint';
 
 // Export all object constructors for GameObjectFactory
 export default {
@@ -13,5 +15,7 @@ export default {
   CivilianSpawnPoint,
   Trash,
   WaterTile,
-  FilterSystem
+  FilterSystem,
+  Cleaner,
+  CleanerSpawnPoint
 };

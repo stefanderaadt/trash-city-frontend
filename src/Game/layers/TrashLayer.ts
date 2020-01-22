@@ -123,10 +123,13 @@ class TrashLayer implements ILayer {
       }
     }
 
+    if (!trashIdsInRadius.length) return;
+
+    // Add coins for each trash item picked up
+    game.addCoins(trashIdsInRadius.length);
+
     // Play one of the random pickup sounds
-    if (trashIdsInRadius.length) {
-      game.soundManager.playSound(`trash_pickup${random(1, pickupSoundsCount)}`);
-    }
+    game.soundManager.playSound(`trash_pickup${random(1, pickupSoundsCount)}`);
 
     // Filter and destroy found trash gameObjects from array
     this.trash = this.trash.filter(t => {

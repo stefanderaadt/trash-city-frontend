@@ -19,7 +19,7 @@ import numberFormatter from '../../../../utils/numberFormatter';
 class Game extends React.Component {
   render() {
     const {
-      game: { score, time }
+      game: { score, time, coins }
     } = this.props;
 
     let icon = '';
@@ -53,7 +53,9 @@ class Game extends React.Component {
                 <i className={icon} />
               </div>
             </div>
-            <div className="bottom-bar-time">{`Tijd: ${displayTime(time)}`}</div>
+            <div className="bottom-bar-info">
+              {`Muntjes: ${coins} - Tijd: ${displayTime(time)}`}
+            </div>
           </div>
         </div>
         <GamePopups />

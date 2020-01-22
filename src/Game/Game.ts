@@ -18,6 +18,7 @@ import {
   resumeGame,
   setTime,
   setScore,
+  setCoins,
   showPopup,
   hidePopup
 } from '../actions/gameActions';
@@ -34,6 +35,7 @@ class Game {
   public currentLevel: Level;
   public inputHandler: InputHandler;
   public soundManager: SoundManager;
+  public coins: number = 0;
 
   public async init(): Promise<void> {
     const gameId = document.getElementById('game');
@@ -81,6 +83,9 @@ class Game {
     // Initialize level and pass level config
     this.currentLevel.init(foundLevel);
 
+    // Clear coins
+    this.setCoins(0);
+
     // Save level data to front-end and display info popup
     store.dispatch(
       levelInit({ name: foundLevel.name, goal: foundLevel.goal, levelId: foundLevel.id })
@@ -112,7 +117,7 @@ class Game {
     store.dispatch(setScore(score));
 
     // Show score popup when the user reached 100%
-    if (score >= 21) {
+    if (score >= 100) {
       this.pause();
       store.dispatch(showPopup(Popups.Score));
     }
@@ -121,6 +126,22 @@ class Game {
   // Get current game score
   public getScore = (): number => {
     return store.getState().game.score;
+  };
+
+  // Add coins to the current players coins
+  public addCoins = (coins): void => {
+    this.setCoins(this.coins + coins);
+  };
+
+  // Remove coins from the current player coins
+  public removeCoins = (coins): void => {
+    this.setCoins(this.coins - coins);
+  };
+
+  // Update variable and send action to UI
+  public setCoins = (coins): void => {
+    this.coins = coins;
+    store.dispatch(setCoins(coins));
   };
 
   private loop = (frame: number): void => {

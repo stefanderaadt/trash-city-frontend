@@ -6,13 +6,13 @@ import { Screens } from '../../../../../../enums.ts';
 import displayTime from '../../../../../../utils/displayTime';
 import HighScores from './HighScores';
 
-const Score = ({ game, game: { time }, setScreen, setScoreName, saveHighScore, score }) => (
+const Score = ({ game: { time }, setScreen, setScoreName, saveHighScore, score }) => (
   <GamePopup className="score-popup">
     <div className="score-popup-content">
       <h1>Gewonnen!</h1>
       <hr />
       <div className="score-popup-info">
-        <p>{`Tijd: ${displayTime(game.time)}`}</p>
+        <p>{`Tijd: ${displayTime(time)}`}</p>
       </div>
       <hr />
       <HighScores

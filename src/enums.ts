@@ -18,7 +18,8 @@ enum GameEventIds {
   SidewalkArea = 1,
   CivilianSpawnPoint = 2,
   WaterTile = 3,
-  FilterSystem = 4
+  FilterSystem = 4,
+  CleanerSpawnPoint = 5
 }
 
 enum TileLayers {

@@ -301,6 +301,46 @@
             <key type="filename">6_walk_up_2.png</key>
             <key type="filename">6_walk_up_3.png</key>
             <key type="filename">6_walk_up_4.png</key>
+            <key type="filename">7_standing_down.png</key>
+            <key type="filename">7_standing_left.png</key>
+            <key type="filename">7_standing_right.png</key>
+            <key type="filename">7_standing_up.png</key>
+            <key type="filename">7_walk_down_1.png</key>
+            <key type="filename">7_walk_down_2.png</key>
+            <key type="filename">7_walk_down_3.png</key>
+            <key type="filename">7_walk_down_4.png</key>
+            <key type="filename">7_walk_left_1.png</key>
+            <key type="filename">7_walk_left_2.png</key>
+            <key type="filename">7_walk_left_3.png</key>
+            <key type="filename">7_walk_left_4.png</key>
+            <key type="filename">7_walk_right_1.png</key>
+            <key type="filename">7_walk_right_2.png</key>
+            <key type="filename">7_walk_right_3.png</key>
+            <key type="filename">7_walk_right_4.png</key>
+            <key type="filename">7_walk_up_1.png</key>
+            <key type="filename">7_walk_up_2.png</key>
+            <key type="filename">7_walk_up_3.png</key>
+            <key type="filename">7_walk_up_4.png</key>
+            <key type="filename">8_standing_down.png</key>
+            <key type="filename">8_standing_left.png</key>
+            <key type="filename">8_standing_right.png</key>
+            <key type="filename">8_standing_up.png</key>
+            <key type="filename">8_walk_down_1.png</key>
+            <key type="filename">8_walk_down_2.png</key>
+            <key type="filename">8_walk_down_3.png</key>
+            <key type="filename">8_walk_down_4.png</key>
+            <key type="filename">8_walk_left_1.png</key>
+            <key type="filename">8_walk_left_2.png</key>
+            <key type="filename">8_walk_left_3.png</key>
+            <key type="filename">8_walk_left_4.png</key>
+            <key type="filename">8_walk_right_1.png</key>
+            <key type="filename">8_walk_right_2.png</key>
+            <key type="filename">8_walk_right_3.png</key>
+            <key type="filename">8_walk_right_4.png</key>
+            <key type="filename">8_walk_up_1.png</key>
+            <key type="filename">8_walk_up_2.png</key>
+            <key type="filename">8_walk_up_3.png</key>
+            <key type="filename">8_walk_up_4.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -438,6 +478,46 @@
             <filename>6_walk_right_1.png</filename>
             <filename>6_walk_right_2.png</filename>
             <filename>6_walk_right_3.png</filename>
+            <filename>7_walk_left_4.png</filename>
+            <filename>7_walk_right_1.png</filename>
+            <filename>7_walk_right_2.png</filename>
+            <filename>7_walk_right_3.png</filename>
+            <filename>7_walk_right_4.png</filename>
+            <filename>7_walk_up_1.png</filename>
+            <filename>7_walk_up_2.png</filename>
+            <filename>7_walk_up_3.png</filename>
+            <filename>7_walk_up_4.png</filename>
+            <filename>8_standing_down.png</filename>
+            <filename>8_standing_left.png</filename>
+            <filename>8_standing_right.png</filename>
+            <filename>8_standing_up.png</filename>
+            <filename>8_walk_down_1.png</filename>
+            <filename>8_walk_down_2.png</filename>
+            <filename>8_walk_down_3.png</filename>
+            <filename>8_walk_down_4.png</filename>
+            <filename>8_walk_left_1.png</filename>
+            <filename>8_walk_left_2.png</filename>
+            <filename>8_walk_left_3.png</filename>
+            <filename>8_walk_left_4.png</filename>
+            <filename>8_walk_right_1.png</filename>
+            <filename>8_walk_right_2.png</filename>
+            <filename>8_walk_right_3.png</filename>
+            <filename>8_walk_right_4.png</filename>
+            <filename>8_walk_up_1.png</filename>
+            <filename>8_walk_up_2.png</filename>
+            <filename>8_walk_up_3.png</filename>
+            <filename>8_walk_up_4.png</filename>
+            <filename>7_standing_down.png</filename>
+            <filename>7_standing_left.png</filename>
+            <filename>7_standing_right.png</filename>
+            <filename>7_standing_up.png</filename>
+            <filename>7_walk_down_1.png</filename>
+            <filename>7_walk_down_2.png</filename>
+            <filename>7_walk_down_3.png</filename>
+            <filename>7_walk_down_4.png</filename>
+            <filename>7_walk_left_1.png</filename>
+            <filename>7_walk_left_2.png</filename>
+            <filename>7_walk_left_3.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
