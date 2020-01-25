@@ -52,9 +52,9 @@ exports[`Game tests Game rendering correctly with high score 1`] = `
         </div>
       </div>
       <div
-        class="bottom-bar-time"
+        class="bottom-bar-info"
       >
-        Tijd: 05:00
+        Muntjes: undefined - Tijd: 05:00
       </div>
     </div>
   </div>
@@ -113,9 +113,9 @@ exports[`Game tests Game rendering correctly with highest score 1`] = `
         </div>
       </div>
       <div
-        class="bottom-bar-time"
+        class="bottom-bar-info"
       >
-        Tijd: 05:00
+        Muntjes: undefined - Tijd: 05:00
       </div>
     </div>
   </div>
@@ -174,9 +174,9 @@ exports[`Game tests Game rendering correctly with low score 1`] = `
         </div>
       </div>
       <div
-        class="bottom-bar-time"
+        class="bottom-bar-info"
       >
-        Tijd: 05:00
+        Muntjes: undefined - Tijd: 05:00
       </div>
     </div>
   </div>
@@ -235,9 +235,9 @@ exports[`Game tests Game rendering correctly with lowest score 1`] = `
         </div>
       </div>
       <div
-        class="bottom-bar-time"
+        class="bottom-bar-info"
       >
-        Tijd: 05:00
+        Muntjes: undefined - Tijd: 05:00
       </div>
     </div>
   </div>
@@ -296,9 +296,9 @@ exports[`Game tests Game rendering correctly with normal score 1`] = `
         </div>
       </div>
       <div
-        class="bottom-bar-time"
+        class="bottom-bar-info"
       >
-        Tijd: 05:00
+        Muntjes: undefined - Tijd: 05:00
       </div>
     </div>
   </div>
