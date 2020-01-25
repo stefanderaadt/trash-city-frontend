@@ -47,6 +47,17 @@ class MainMenu extends React.Component {
         </div>
         <div className="game-screen-item">
           <Button
+            className="main-menu-feedback-button"
+            fullwidth
+            link="https://forms.gle/6b8Lrr72zHwudbib8"
+            target="_blank"
+            style={{ backgroundColor: '#45a55d' }}
+          >
+            Feedback geven
+          </Button>
+        </div>
+        <div className="game-screen-item">
+          <Button
             className="main-menu-close-button"
             fullwidth
             onClick={() => {

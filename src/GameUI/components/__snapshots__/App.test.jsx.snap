@@ -17,12 +17,39 @@ exports[`App tests App rendering controls menu correctly 1`] = `
       <div
         class="game-screen-item game-screen-title"
       >
-        Besturing
+        Besturing:
       </div>
       <div
         class="game-screen-item"
       >
-        Toetsen
+        Pijltjestoetsen en Spatiebalk
+      </div>
+      <div
+        class="game-screen-item controls-menu-keys-top"
+      >
+        <i
+          class="icon icon-arrow-up"
+        />
+      </div>
+      <div
+        class="game-screen-item controls-menu-keys"
+      >
+        <i
+          class="icon icon-arrow-left"
+        />
+        <i
+          class="icon icon-arrow-down"
+        />
+        <i
+          class="icon icon-arrow-right"
+        />
+      </div>
+      <div
+        class="game-screen-item controls-menu-keys"
+      >
+        <i
+          class="icon icon-space_bar"
+        />
       </div>
       <div
         class="game-screen-item"
@@ -99,9 +126,9 @@ exports[`App tests App rendering game ui correctly 1`] = `
           </div>
         </div>
         <div
-          class="bottom-bar-time"
+          class="bottom-bar-info"
         >
-          Tijd: 05:00
+          Muntjes: undefined - Tijd: 05:00
         </div>
       </div>
     </div>
@@ -143,14 +170,37 @@ exports[`App tests App rendering levels ui correctly 1`] = `
               class="game-screen-level-thumbnail"
             >
               <img
-                alt="LEVEL 1"
-                src="img/placeholder-img.jpg"
+                alt="De stad"
+                src="img/level1.png"
               />
             </div>
             <div
               class="game-screen-level-name"
             >
-              LEVEL 1
+              De stad
+            </div>
+          </div>
+        </div>
+        <div
+          class="game-screen-level-item"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="game-screen-level-item-content"
+          >
+            <div
+              class="game-screen-level-thumbnail"
+            >
+              <img
+                alt="Het park"
+                src="img/level2.png"
+              />
+            </div>
+            <div
+              class="game-screen-level-name"
+            >
+              Het park
             </div>
           </div>
         </div>
@@ -267,6 +317,19 @@ exports[`App tests App rendering main menu correctly 1`] = `
       <div
         class="game-screen-item"
       >
+        <a
+          class="button full-width main-menu-feedback-button"
+          href="https://forms.gle/6b8Lrr72zHwudbib8"
+          role="button"
+          style="background-color:#45a55d"
+          target="_blank"
+        >
+          Feedback geven
+        </a>
+      </div>
+      <div
+        class="game-screen-item"
+      >
         <div
           class="button full-width main-menu-close-button"
           role="button"
@@ -303,13 +366,13 @@ exports[`App tests App rendering settings menu correctly 1`] = `
         class="game-screen-item"
       >
         <span>
-          Volume: 50
+          Volume: 5000
         </span>
         <div
           aria-orientation="horizontal"
           aria-valuemax="100"
           aria-valuemin="0"
-          aria-valuenow="50"
+          aria-valuenow="5000"
           class="rangeslider rangeslider-horizontal settings-volume-rangeslider"
         >
           <div
