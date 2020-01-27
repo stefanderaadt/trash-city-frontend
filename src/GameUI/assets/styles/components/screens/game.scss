@@ -91,8 +91,12 @@
         }
       }
 
-      .pause-popup .pause-popup-buttons .popup-button-container:first-child {
-        margin-top: 5rem;
+      .pause-popup {
+        margin: 1rem;
+
+        .pause-popup-buttons .popup-button-container:first-child {
+          margin-top: 1rem;
+        }
       }
 
       .info-popup {
