@@ -5,7 +5,7 @@ import Button from '../../../Default/Button';
 import game from '../../../../../Game/Game.ts';
 import { Screens } from '../../../../../enums.ts';
 
-const Pause = ({ setScreen }) => (
+const Pause = ({ setScreen, level: { goal } }) => (
   <GamePopup>
     <div className="pause-popup">
       <h1>Pauze</h1>
@@ -21,6 +21,9 @@ const Pause = ({ setScreen }) => (
           </Button>
         </div>
       </div>
+      <hr />
+      <h3>Leveldoel:</h3>
+      <p>{goal}</p>
     </div>
   </GamePopup>
 );

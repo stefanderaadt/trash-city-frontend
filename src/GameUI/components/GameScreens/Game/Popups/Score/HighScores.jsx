@@ -7,7 +7,7 @@ import displayTime from '../../../../../../utils/displayTime';
 const HighScores = ({
   setScoreName,
   saveHighScore,
-  score: { scoreName, highScores, fetchingHighScores, fetchedHighScores, savingScore, savedScore },
+  score: { name, highScores, fetchingHighScores, fetchedHighScores, savingScore, savedScore },
   time
 }) => {
   if (fetchingHighScores) {
@@ -35,7 +35,7 @@ const HighScores = ({
             className="popup-score-name-input"
             type="text"
             placeholder="Naam"
-            value={scoreName}
+            value={name}
             onChange={e => setScoreName(e.target.value)}
           />
           <Button

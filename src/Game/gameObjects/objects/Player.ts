@@ -1,6 +1,8 @@
 /* eslint-disable import/no-cycle */
 import * as PIXI from 'pixi.js';
 
+import { GlowFilter } from '@pixi/filter-glow';
+
 import IGameObject from '../IGameObject';
 import Position from '../Position';
 import BoxCollider from '../../BoxCollider';
@@ -22,9 +24,6 @@ class Player implements IGameObject {
   private arrowKeyDown: boolean = false;
   private previousArrowKeyDown: boolean = false;
 
-  private keysDown = {};
-  private previousKeysDown = {};
-
   constructor({ x, y }) {
     const position = new Position({ x, y, speed: 2 });
     this.boxCollider = new BoxCollider({ width: 10, height: 14, position });
@@ -44,6 +43,7 @@ class Player implements IGameObject {
     sprite.pivot.x = 8; // Set center of rotation to the center of the sprite
     sprite.pivot.y = 8; // Set center of rotation to the center of the sprite
     sprite.animationSpeed = 0.1; // Set animation speed
+    sprite.filters = [new GlowFilter(5, 2, 1, 0xffffff)];
     this.sprite = sprite;
 
     return this.sprite;
@@ -62,9 +62,6 @@ class Player implements IGameObject {
 
   public update = (): void => {
     this.arrowKeyDown = false;
-
-    // Get keys that are currently down
-    this.keysDown = game.inputHandler.keysDown;
 
     // Move up if the user is holding the arrow up key
     if (
@@ -107,10 +104,7 @@ class Player implements IGameObject {
     }
 
     // Try user actions once when the SpaceBar key is pressed
-    if (
-      game.inputHandler.keyIsPressed(Keys.SpaceBar) &&
-      !(Keys.SpaceBar in this.previousKeysDown)
-    ) {
+    if (game.inputHandler.keyIsPressed(Keys.SpaceBar) && !(game.gameLoop.frame % 10)) {
       game.currentLevel.trashLayer.pickupTrash(this.boxCollider);
       game.currentLevel.gameObjectLayer.repairFilter(this.boxCollider);
       game.currentLevel.gameObjectLayer.spawnCleaner(this.boxCollider);
@@ -134,7 +128,6 @@ class Player implements IGameObject {
     // Update previous values for next loop
     this.previousDirection = this.direction;
     this.previousArrowKeyDown = this.arrowKeyDown;
-    this.previousKeysDown = { ...this.keysDown };
   };
 
   public render = (): void => {

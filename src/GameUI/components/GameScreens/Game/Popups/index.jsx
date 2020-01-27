@@ -27,7 +27,8 @@ class GamePopups extends React.Component {
 
   setScoreName = name => {
     const { dispatch } = this.props;
-    dispatch(setScoreName(name));
+
+    dispatch(setScoreName(name.substring(0, 20)));
   };
 
   saveHighScore = () => {
@@ -46,7 +47,7 @@ class GamePopups extends React.Component {
 
     switch (game.currentPopup) {
       case Popups.Pause:
-        return <Pause setScreen={this.setScreen} />;
+        return <Pause setScreen={this.setScreen} level={level} />;
       case Popups.Score:
         return (
           <Score
